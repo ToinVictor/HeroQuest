@@ -205,18 +205,6 @@ footer {
   }
 }
 
-/* ======= DOWNLOAD ======= */
-.download {
-  background: radial-gradient(circle at top, #0f1c2c, #08111c);
-}
-
-.download .btn {
-  background: linear-gradient(90deg, #ffcc00, #ff8800);
-  box-shadow: 0 0 20px #ff8800;
-  text-decoration: none; /* Adicione esta linha */
-}
-
-
 /* ======= MECÂNICAS ======= */
 .mechanics {
   background: radial-gradient(circle at top, #0f1c2c, #08111c);
