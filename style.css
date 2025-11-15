@@ -215,3 +215,182 @@ footer {
   box-shadow: 0 0 20px #ff8800;
   text-decoration: none; /* Adicione esta linha */
 }
+
+
+/* ======= MECÂNICAS ======= */
+.mechanics {
+  background: radial-gradient(circle at top, #0f1c2c, #08111c);
+}
+
+.mechanics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.mechanic-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.mechanic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);
+}
+
+.mechanic-card h3 {
+  color: #00eaff;
+  margin-bottom: 1rem;
+}
+
+/* ======= CLASSES ======= */
+.classes {
+  background: linear-gradient(180deg, #08111c, #091a29);
+}
+
+.classes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.class-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.class-card:hover {
+  transform: translateY(-8px);
+}
+
+.warrior:hover {
+  box-shadow: 0 0 20px rgba(255, 50, 50, 0.7);
+}
+
+.mage:hover {
+  box-shadow: 0 0 20px rgba(100, 100, 255, 0.7);
+}
+
+.archer:hover {
+  box-shadow: 0 0 20px rgba(50, 255, 50, 0.7);
+}
+
+.class-card h3 {
+  color: #00eaff;
+  margin-bottom: 1rem;
+}
+
+.class-card ul {
+  text-align: left;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.class-card li {
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+/* ======= DESENVOLVIMENTO ======= */
+.development {
+  background: radial-gradient(circle at top, #182235, #0f1825);
+}
+
+.dev-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.dev-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  transition: transform 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.dev-item:hover {
+  transform: translateY(-5px);
+}
+
+.dev-item h3 {
+  color: #00eaff;
+  margin-bottom: 1rem;
+}
+
+.dev-item ul {
+  text-align: left;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.dev-item li {
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+/* ======= INFORMAÇÕES DE DOWNLOAD ======= */
+.download-info {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.download-info h3 {
+  color: #ffcc00;
+  margin-bottom: 1rem;
+}
+
+/* ======= HISTÓRIA DO DESENVOLVEDOR ======= */
+.dev-story {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dev-story h3 {
+  color: #00eaff;
+  margin-bottom: 1rem;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 768px) {
+  .classes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .class-card {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .mechanics-grid,
+  .dev-grid {
+    grid-template-columns: 1fr;
+  }
+}
