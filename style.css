@@ -126,6 +126,45 @@ section {
   margin-bottom: 1rem;
 }
 
+/* ======= CRÉDITOS ======= */
+.credits {
+  background: linear-gradient(180deg, #08111c, #091a29);
+}
+
+.credits-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.credits-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.credits-content li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.credits-content li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.credits-content a {
+  color: #00eaff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.credits-content a:hover {
+  color: #00ffcc;
+  text-decoration: underline;
+}
+
 /* ======= APOIO PIX ======= */
 .support {
   background: linear-gradient(180deg, #08111c, #091a29);
@@ -380,5 +419,15 @@ footer {
   .mechanics-grid,
   .dev-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 400px;
   }
 }
